@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Onesta Registro</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,400,700&display=swap" rel="stylesheet"/>
+    <link rel="stylesheet" href="./css/stylos_login.css">
+    <script src="https://kit.fontawesome.com/5e993c5fbb.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="contenedor">
+        <header class="header">
+            <div class="logo">
+                <p class="iniciales-logo">TO</p>
+                <h1>Test Onesta</h1>
+            </div>
+            <nav class="menu">
+                <a href="#">Inicio</a>
+                <a href="#">Acerca de</a>
+                <a href="#">Mi perfil</a>
+                <a href="#">Contacto</a>
+            </nav>
+        </header>
+        <div class="contenedor-registro">
+            <form action="" class="formulario" id="frm-registro" onsubmit="">
+                <h1 class="titulo">Registrate</h1>
+                    <div class="input-registro">
+                        <label for="txtNombre">Cual es Tu Nombre o Nombres?</label><br>
+                        <i class="fas fa-user icon"></i>
+                        <input type="text" placeholder="Nombre" required id="txtNombre">
+                    </div>
+                    <div class="input-registro">
+                        <label for="txtPaterno">Cual es Tu Primer Apellido?</label><br>
+                        <i class="far fa-user icon"></i>
+                        <input type="text" placeholder="Apellido Paterno" required id="txtPaterno">
+                    </div>
+                    <div class="input-registro">
+                        <label for="txtMaterno">Cual es Tu Segundo Apellido?</label><br>
+                        <i class="far fa-user icon"></i>
+                        <input type="text" placeholder="Apellido Materno" required id="txtMaterno">
+                    </div>
+                    <div class="input-registro">
+                        <label for="txtEdad">Cual es Tu Edad?</label><br>
+                        <i class="fas fa-birthday-cake icon"></i>
+                        <input type="number" placeholder="Edad" required id="txtEdad">
+                    </div>
+                    <div class="input-registro">
+                        <label for="txtGenero">Cual es Tu Genero? </label><br>
+                        <i class="fas fa-venus-mars icon"></i>
+                        <select name="" id="txtGenero" class="option" required>
+                            <option value="">--Seleccione una opción--</option>
+                            <option value="Masculino" >Masculino</option>
+                            <option value="Masculino" >Femenino</option>
+                        </select>
+                    </div>
+                    <div class="input-registro">
+                        <label for="txtOcupacion">A que Te Dedicas?</label><br>
+                        <i class="fas fa-briefcase icon"></i>
+                        <select name="" id="txtOcupacion" class="option" required>
+                            <option value="">--Seleccione una opción--</option>
+                            <option value="Desempleado">Desempleado</option>
+                            <option value="Estudiante">Estudiante</option>
+                            <option value="Ingeniero">Ingeniero</option>
+                            <option value="Licenciado">Licenciado</option>
+                        </select>
+                    </div>
+                    <div class="input-registro">
+                        <label for="txtCivil">Cual es Tu Estado Civil?</label><br>
+                        <i class="fab fa-gratipay icon"></i>
+                        <select name="" id="txtCivil" class="option" required>
+                            <option value="">--Seleccione una opción--</option>
+                            <option value="Casado">Casado</option>
+                            <option value="Soltero">Soltero</option>
+                            <option value="Divorciado">Divorciado</option>
+                            <option value="En Relación">En Relación</option>
+                        </select>
+                    </div>
+                    <div class="input-registro">
+                        <label for="txtAcademico">Cual es Tu Nivel Academico?</label><br>
+                        <i class="fas fa-book icon"></i>
+                        <select name="" id="txtAcademico" class="option" required>
+                            <option value="">--Seleccione una opción--</option>
+                            <option value="Secundaria Terminada">Secundaria Terminada</option>
+                            <option value="Preparatoria Terminada">Preparatoria Terminada</option>
+                            <option value="Universidad Terminada">Universidad Terminada</option>
+                            <option value="Maestria Terminada">Maestria Terminada</option>
+                            <option value="Doctorado Terminado">Doctorado Terminado</option>
+                        </select>
+                    </div>
+                    <div class="input-registro">
+                        <label for="txtTelefono">Cual es Tu Numero Telefonico?</label><br>
+                        <i class="fas fa-phone icon"></i>
+                        <input type="text" placeholder="Numero Telefonico" required id="txtTelefono">
+                    </div>
+                    <div class="input-registro">
+                        <label for="txtFecha">Cuando Aplicas el Test?</label><br>
+                        <i class="fas fa-calendar-day icon"></i>
+                        <input type="date"required id="txtFecha">
+                    </div>
+                    <div class="input-registro">
+                        <label for="txtCorreo">Cual es Tu Correo Electronico?</label><br>
+                        <i class="fas fa-envelope icon"></i>
+                        <input type="email" placeholder="Correo Electronico" required id="txtCorreo">
+                    </div>
+                    <div class="input-registro">
+                        <label for="txtContraseña">Crea una contraseña</label><br>
+                        <i class="fas fa-key icon"></i>
+                        <input type="password" placeholder="Contraseña" required id="txtContraseña">
+                    </div>
+                    <input type="submit" value="Registrate" class="button" id="btnSavePaciente" >
+                    <a href="parte1.html">Ir al Test</a>
+            </form>
+        </div>
+        <footer class="footer">
+            <p>Copyright © 2021 TestOnesta</p>
+        </footer>
+    </div>
+    
+    <script src="js/businessLogic.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="js/uiLogic.js"></script>
+    
+</body>
+</html>
