@@ -140,13 +140,13 @@ a {
     text-transform: uppercase;
 	font-size: 1.5625em;
 	background: #fff;
-	padding: 40px;
+	padding: 2.5rem;
 	border-radius: 10px 10px 0 0;
 	margin-bottom: 0;
 }
 
 .contenedor .contenedor-lista-citas .lista {
-    padding: 40px;
+    padding: 2.5em;
 	width: 100%;
 }
 
@@ -154,11 +154,11 @@ a {
     text-align: center;
     background: #fff;
 	align-items: center;
-	padding: 20px;
+	padding: 1.25em;
 	border-radius: 10px;
 	margin-bottom: 20px;
     cursor: move;
-    height: 75px;
+    height: 4.6875rem;
 	
 }
 
@@ -194,7 +194,6 @@ a {
 	border-radius: 10px;
 	margin-bottom: 20px;
     height: 75px;
-	
 }
 
 /*---------- LISTA RESPUESTAS ----------*/
@@ -238,7 +237,7 @@ a {
 
 
 .contenedor .contenedor-lista-respuestas .lista {
-    padding: 40px;
+    padding: 2.5em;
 	width: 100%;
 }
 
@@ -246,11 +245,11 @@ a {
     text-align: center;
     background: #fff;
 	align-items: center;
-	padding: 20px;
+	padding: 1.25em;
 	border-radius: 10px;
 	margin-bottom: 20px;
 	cursor: move;
-    height: 75px;
+    height: 4.6875rem;
 }
 
 /*---------- FOOTER ----------*/
@@ -263,3 +262,295 @@ a {
 	box-shadow: 0px 0px 70px rgba(102, 102, 102, 0.2);
     border-radius: 10px
 }
+
+/* para pantallas estra grandes pc*/ 
+@media (max-width: 1200px) {
+	body{
+		font-size: 14px;
+	}
+	.contenedor {
+		width: 90%;
+		grid-gap: 1em;
+		grid-template-columns: repeat(6, 1fr);
+		grid-template-rows: repeat(4, auto);
+		grid-template-areas:
+		'header			header			header			header			header 			header'
+		'instrucciones	instrucciones	instrucciones	instrucciones	instrucciones 	instrucciones'
+		'lista		    posicion		lista1			lista1			lista1 			lista1'
+		'footer	 		footer			footer			footer			footer 			footer';
+	}
+	.contenedor .contenedor-lista-citas .lista {
+		padding: .5em;
+		width: 100%;
+		font-size: 1rem;
+	}
+	.contenedor .contenedor-lista-citas{
+		width: 100%;
+	}
+	.contenedor .contenedor-lista-citas .titulo{
+		padding: .8em;
+		width: 100%;
+		font-size: .8rem;
+	}
+	.contenedor .contenedor-lista-citas .lista .cita{
+		height:10em;
+	}
+		/*---------- para la lista de posicion  ----------*/
+	.contenedor .contenedor-lista-posicion .lista {
+		padding: .8em;
+		width: 100%;
+		font-size: 1.2rem;
+	}
+	.contenedor .contenedor-lista-posicion {
+		width: 100%;
+	}
+	.contenedor .contenedor-lista-posicion .titulo {
+		padding: .8em;
+		width: 100%;
+		font-size: .8rem;
+	}
+	.contenedor .contenedor-lista-posicion .lista .lugar {
+		padding: .7em;
+		border-radius: 8px;
+	}
+	/*---------- para la lista de respuestas   ----------*/
+	.contenedor .contenedor-lista-respuestas .lista {
+		padding: .8em;
+		width: 100%;
+		font-size: 1.2rem;
+	}
+	.contenedor .contenedor-lista-respuestas {
+		width: 100%;
+	}
+	.contenedor .contenedor-lista-respuestas .titulo {
+		padding: .8em;
+		width: 100%;
+		font-size: .8rem;
+
+	}
+	.contenedor .contenedor-lista-respuestas .lista .cita{
+		padding: .7em;
+		border-radius: 8px;
+	}
+
+}
+/*para pantallas de pc nomales*/
+@media (max-width: 992px) {
+	body{
+		font-size: 16px;
+	}
+	.contenedor {
+		width: 90%;
+		grid-gap: 1em;
+		grid-template-columns: repeat(6, 1fr);
+		grid-template-rows: repeat(4, auto);
+		grid-template-areas:
+		'header			header			header			header			header 			header'
+		'instrucciones	instrucciones	instrucciones	instrucciones	instrucciones 	instrucciones'
+		'lista		    posicion		lista1			lista1			lista1 			lista1'
+		'footer	 		footer			footer			footer			footer 			footer';
+	}
+	.contenedor .contenedor-lista-citas .lista {
+		padding: .5em;
+		width: 100%;
+		font-size: 1rem;
+	}
+	.contenedor .contenedor-lista-citas{
+		width: 100%;
+	}
+	.contenedor .contenedor-lista-citas .titulo{
+		padding: .8em;
+		width: 100%;
+		font-size: .8rem;
+	}
+	.contenedor .contenedor-lista-citas .lista .cita{
+		height:9.5em;
+	}
+		/*---------- para la lista de posicion  ----------*/
+	.contenedor .contenedor-lista-posicion .lista {
+		padding: .8em;
+		width: 100%;
+		font-size: 1rem;
+	}
+	.contenedor .contenedor-lista-posicion {
+		width: 100%;
+	}
+	.contenedor .contenedor-lista-posicion .titulo {
+		padding: .8em;
+		width: 100%;
+		font-size: .8rem;
+	}
+	.contenedor .contenedor-lista-posicion .lista .lugar {
+		padding: .7em;
+		border-radius: 8px;
+	}
+	/*---------- para la lista de respuestas   ----------*/
+	.contenedor .contenedor-lista-respuestas .lista {
+		padding: .8em;
+		width: 100%;
+		font-size: 1rem;
+	}
+	.contenedor .contenedor-lista-respuestas {
+		width: 100%;
+	}
+	.contenedor .contenedor-lista-respuestas .titulo {
+		padding: .8em;
+		width: 100%;
+		font-size: .8rem;
+
+	}
+	.contenedor .contenedor-lista-respuestas .lista .cita{
+		padding: .7em;
+		border-radius: 8px;
+	}
+	
+}
+
+/*para tablets*/
+@media (max-width: 768px) {
+	body{
+		font-size: 13px;
+	} 
+		/*---------- para la lista de frases  ----------*/
+	
+	.contenedor {
+		width: 90%;
+		grid-gap: 1em;
+		grid-template-columns: repeat(6, 1fr);
+		grid-template-rows: repeat(4, auto);
+		grid-template-areas:
+		'header			header			header			header			header 			header'
+		'instrucciones	instrucciones	instrucciones	instrucciones	instrucciones 	instrucciones'
+		'lista		    posicion		lista1			lista1			lista1 			lista1'
+		'footer	 		footer			footer			footer			footer 			footer';
+	}
+	.contenedor .contenedor-lista-citas .lista {
+		padding: .5em;
+		width: 100%;
+		font-size: 1rem;
+	}
+	.contenedor .contenedor-lista-citas{
+		width: 100%;
+	}
+	.contenedor .contenedor-lista-citas .titulo{
+		padding: .8em;
+		width: 100%;
+		font-size: .8rem;
+	}
+	.contenedor .contenedor-lista-citas .lista .cita{
+		height:10em;
+	}
+		/*---------- para la lista de posicion  ----------*/
+	.contenedor .contenedor-lista-posicion .lista {
+		padding: .8em;
+		width: 100%;
+		font-size: 1rem;
+	}
+	.contenedor .contenedor-lista-posicion {
+		width: 100%;
+	}
+	.contenedor .contenedor-lista-posicion .titulo {
+		padding: .8em;
+		width: 100%;
+		font-size: .8rem;
+	}
+	.contenedor .contenedor-lista-posicion .lista .lugar {
+		padding: .7em;
+		border-radius: 8px;
+	}
+	/*---------- para la lista de respuestas   ----------*/
+	.contenedor .contenedor-lista-respuestas .lista {
+		padding: .8em;
+		width: 100%;
+		font-size: 1rem;
+	}
+	.contenedor .contenedor-lista-respuestas {
+		width: 100%;
+	}
+	.contenedor .contenedor-lista-respuestas .titulo {
+		padding: .8em;
+		width: 100%;
+		font-size: .8rem;
+
+	}
+	.contenedor .contenedor-lista-respuestas .lista .cita{
+		padding: .7em;
+		border-radius: 8px;
+	}
+		
+}
+
+
+/*para smarthphones*/
+@media (max-width: 576px) {
+	body{
+		font-size: 12px;
+		/*---------- para la lista de frases  ----------*/
+	}
+	.contenedor {
+		width: 100%;
+		grid-gap: 0em;
+		grid-template-columns: repeat(6, 1fr);
+		grid-template-rows: repeat(4, auto);
+		grid-template-areas:
+		'header			header			header			header			header 			header'
+		'instrucciones	instrucciones	instrucciones	instrucciones	instrucciones 	instrucciones'
+		'lista		    posicion		lista1			lista1			lista1 			lista1'
+		'footer	 		footer			footer			footer			footer 			footer';
+	}
+	.contenedor .contenedor-lista-citas .lista {
+		padding: .5em;
+		width: 100%;
+		font-size: .7rem;
+	}
+	.contenedor .contenedor-lista-citas{
+		width: 100%;
+	}
+	.contenedor .contenedor-lista-citas .titulo{
+		padding: .8em;
+		width: 100%;
+		font-size: .8rem;
+	}
+	.contenedor .contenedor-lista-citas .lista .cita{
+		height:10em;
+	}
+		/*---------- para la lista de posicion  ----------*/
+	.contenedor .contenedor-lista-posicion .lista {
+		padding: .8em;
+		width: 100%;
+		font-size: .8rem;
+	}
+	.contenedor .contenedor-lista-posicion {
+		width: 100%;
+	}
+	.contenedor .contenedor-lista-posicion .titulo {
+		padding: .8em;
+		width: 100%;
+		font-size: .8rem;
+	}
+	.contenedor .contenedor-lista-posicion .lista .lugar {
+		padding: .7em;
+		border-radius: 8px;
+	}
+	/*---------- para la lista de respuestas   ----------*/
+	.contenedor .contenedor-lista-respuestas .lista {
+		padding: .8em;
+		width: 100%;
+		font-size: .8rem;
+		grid-gap: .5rem;
+	}
+	.contenedor .contenedor-lista-respuestas {
+		width: 100%;
+	}
+	.contenedor .contenedor-lista-respuestas .titulo {
+		padding: .8em;
+		width: 100%;
+		font-size: .8rem;
+
+	}
+	.contenedor .contenedor-lista-respuestas .lista .cita{
+		padding: .825em;
+		border-radius: 8px;
+	}
+}
+
