@@ -249,6 +249,9 @@ select[class="option"] {
 	body{
 		font-size: 13px;
 	}
+	.input_error{
+		width: 80%;
+	}
 	.contenedor-registro 
 input[type="email"],
 input[type="password"],
