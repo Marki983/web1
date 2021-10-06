@@ -531,6 +531,7 @@ a {
 	.contenedor .contenedor-lista-posicion .lista .lugar {
 		padding: .7em;
 		border-radius: 8px;
+		height: 4rem
 	}
 	/*---------- para la lista de respuestas   ----------*/
 	.contenedor .contenedor-lista-respuestas .lista {
@@ -551,6 +552,7 @@ a {
 	.contenedor .contenedor-lista-respuestas .lista .cita{
 		padding: .825em;
 		border-radius: 8px;
+		height: 4rem
 	}
 }
 
