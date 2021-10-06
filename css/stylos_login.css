@@ -179,7 +179,7 @@ select[class="option"] {
 .input_error{
 	background-color: red;
 	color: white;
-	font-size: 1.25em;
+	font-size: 1em;
     width: 88%;
     padding: 10px;
     border: none;
@@ -286,7 +286,7 @@ input[type="date"],
 input[type="number"],
 select[class="option"] {
     font-size: 1em;
-    width: 80%;
+    width: 79%;
     padding: 10px;
     border: none;
     border-radius: 5px;
