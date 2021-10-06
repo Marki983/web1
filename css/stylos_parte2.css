@@ -487,6 +487,9 @@ a {
 		font-size: 12px;
 		/*---------- para la lista de frases  ----------*/
 	}
+	.presentacion .contenedor-texto {
+		font-size: 1.25em;
+	}
 	.contenedor {
 		width: 100%;
 		grid-gap: 0em;
