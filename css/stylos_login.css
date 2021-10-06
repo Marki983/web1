@@ -191,6 +191,9 @@ select[class="option"] {
 	body{
 		font-size: 16px;
 	}
+	.input_error{
+		width: 85%;
+	}
 	.contenedor-registro 
 input[type="email"],
 input[type="password"],
@@ -220,6 +223,9 @@ select[class="option"] {
 	body{
 		font-size: 14px;
 	}
+	.input_error{
+		width: 80%;
+	}
 	.contenedor-registro 
 input[type="email"],
 input[type="password"],
@@ -248,9 +254,6 @@ select[class="option"] {
 @media (max-width: 768px) {
 	body{
 		font-size: 13px;
-	}
-	.input_error{
-		width: 80%;
 	}
 	.contenedor-registro 
 input[type="email"],
