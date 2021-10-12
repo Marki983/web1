@@ -1,0 +1,208 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Roboto Condensed', sans-serif;
+	font-weight: 300;
+	background-color: gray;
+	font-size: 16px;
+}
+
+a {
+	text-decoration: none;
+}
+
+.contenedor {
+	width: 90%;
+	max-width: 75em;
+	margin: 1.25em auto;
+	display: grid;
+	grid-gap: 1.25em;
+	grid-template-columns: repeat(1, 1fr);
+	grid-template-rows: repeat(3, auto);
+	grid-template-areas:
+	'header'
+	'intro'
+	'footer';
+}
+
+/* ---------- HEADER ----------*/
+.header {
+	grid-area: header;
+	padding: 1.25em;
+	background-color: lightblue;
+	box-shadow: 0px 0px 70px rgba(102, 102, 102, 0.2);
+	color: black;
+    border-radius: 10px
+}
+
+.header .logo {
+	margin-bottom: 1.25em;
+	text-transform: uppercase;
+	text-align: center;
+	letter-spacing: 3px;
+}
+
+.logo h1 {
+	font-size: 1.875em;
+}
+
+.logo .iniciales-logo {
+	padding: 0.3125em;
+	border: 0.125em solid #000;
+	display: inline-block;
+	font-size: 1em;
+	margin-bottom: 0.9375em;
+}
+
+.menu {
+	border-top: 1px solid #000;
+	border-bottom: 1px solid #000;
+	display: flex;
+	justify-content: space-between;
+}
+
+.menu a {
+	padding: 0.625em;
+	color: #000;
+	display: block;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-weight: 400;
+	width: 100%;
+	text-align: center;
+	transition: 0.2s ease all;
+	font-size: 1em;
+}
+
+.menu a:hover {
+	background: #000;
+	color: #fff;
+}
+
+/* ---------- INTRO ----------*/
+.intro {
+	display: flex;
+	background: lightblue;
+	box-shadow: 0px 0px 70px rgba(102, 102, 102, 0.2);
+    grid-area: intro;
+	box-shadow: 0px 0px 70px rgba(102, 102, 102, 0.2);
+    border-radius: 10px;	
+	width: 60%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.intro .contenedor-texto {
+	padding: 1.25em;
+	width: 50%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	width: 100%;
+	font-size: 1.25em;
+	height: 56.25rem;
+}
+
+.intro .titulo {
+    text-align: center;
+	margin-bottom: 0.625rem;
+	font-size: 1.5625em;
+	color: #000;
+}
+
+.intro .instrucciones {
+	text-align: justify;
+	font-size: 1.25em; 
+	line-height: 1.5625rem; 
+	font-weight: 300;
+	margin-bottom: 1.25rem; 
+	color:black;
+	
+}
+
+.intro .boton_pago{
+	display: flex;
+	margin-left: 13.5em;
+}
+
+.intro .boton_pago .carrito{
+	width: 12.5em;
+	height: 6.25rem;
+}
+/*---------- FOOTER ----------*/
+.contenedor .footer {
+	background:lightblue;
+	font-size: 1.25em; 
+	grid-area: footer;
+	padding: 1.5625em; 
+	text-align: right;
+	box-shadow: 0px 0px 70px rgba(102, 102, 102, 0.2);
+    border-radius: 10px
+}
+
+/* para pantallas estra grandes pc*/ 
+@media (max-width: 1200px){
+	body{
+		font-size: 14px;
+	}
+	.intro .boton_pago{
+		display: flex;
+		margin-left: 10em;
+	}
+}
+
+/*para pantallas de pc nomales*/
+@media (max-width: 992px){
+	body{
+		font-size: 16px;
+	}
+	.intro{
+		width: 80%;
+	}
+	.intro .contenedor-texto {
+		height: 48em;
+	}
+	.intro .boton_pago{
+		display: flex;
+		margin-left: 11em;
+	}
+}
+
+/*para tablets*/
+@media (max-width: 768px){
+	body{
+		font-size: 13px;
+	}
+	.intro{
+		width: 80%;
+	}
+	.intro .contenedor-texto {
+		height: 49em;
+	}
+	.intro .boton_pago{
+		display: flex;
+		margin-left: 8.5em;
+	}
+}
+
+/*para smarthphones*/
+@media (max-width: 576px){
+	body{
+		font-size: 12px;
+	}
+	.intro{
+		width: 90%;
+	}
+	.intro .contenedor-texto {
+		height: 65em;
+	}
+	.intro .boton_pago{
+		display: flex;
+		margin-left: 3em;
+	}
+}
+
