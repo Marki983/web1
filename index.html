@@ -6,23 +6,53 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,400,700&display=swap" rel="stylesheet"/>
+    <link rel="stylesheet" href="css/stylos_index.css">
 </head>
 <body>
-    <header class="header">
-        <div class="logo">
-            <p class="iniciales-logo">TO</p>
-            <h1>Test Onesta</h1>
-        </div>
-        <nav class="menu">
-            <a href="#">Inicio</a>
-            <a href="#">Acerca de</a>
-            <a href="#">Mi perfil</a>
-            <a href="#">Contacto</a>
-        </nav>
-    </header>
-    <a href="login.html">Registrate</a>
-    <footer class="footer">
-        <p>Copyright © 2021 TestOnesta</p>
-    </footer>
+    <div class="contenedor">
+        <header class="header">
+            <div class="logo">
+                <p class="iniciales-logo">TO</p>
+                <h1>Test Onesta</h1>
+            </div>
+            <nav class="menu">
+                <a href="#">Inicio</a>
+                <a href="#">Acerca de</a>
+                <a href="#">Mi perfil</a>
+                <a href="#">Contacto</a>
+            </nav>
+        </header>
+        <main class="intro">
+            <div class="contenedor-texto">
+                <h2 class="titulo"> 
+                    Nuestra Misión
+                </h2> 
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iure distinctio quas inventore nemo cumque dolorem cum provident reprehenderit esse aperiam laborum eaque iste commodi delectus aliquid aliquam, nihil reiciendis asperiores?</p>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Non voluptate laboriosam illo impedit placeat! Aperiam quis repellat doloremque cumque, maxime fugiat deserunt qui asperiores pariatur sunt nulla consequuntur quod magni.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque possimus incidunt eveniet, obcaecati cupiditate consequuntur aperiam voluptatem? Soluta in iure numquam quod a officia dolores, doloribus quisquam similique animi ratione.</p>
+                <br>
+                <h3 class="titulo">
+                    Precios 
+                </h3>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iure distinctio quas inventore nemo cumque dolorem cum provident reprehenderit esse aperiam laborum eaque iste commodi delectus aliquid aliquam, nihil reiciendis asperiores?</p>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Non voluptate laboriosam illo impedit placeat! Aperiam quis repellat doloremque cumque, maxime fugiat deserunt qui asperiores pariatur sunt nulla consequuntur quod magni.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque possimus incidunt eveniet, obcaecati cupiditate consequuntur aperiam voluptatem? Soluta in iure numquam quod a officia dolores, doloribus quisquam similique animi ratione.</p>
+                <br>
+                <br>
+                <p>Para poder realizar el pago correspondiente, se necestita realizar por medio del metodo seguro, PayPal. Es necesesario dar click en la siguiente imagen, le mandara a la pagina de PayPal, una vez acreditado el pago, le mandara a la pagina de registro del Test</p>
+                <br>
+                <br>
+                <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top" class="boton_pago">
+                    <input type="hidden" name="cmd" value="_s-xclick">
+                    <input type="hidden" name="hosted_button_id" value="U32S8RH2HS2FW">
+                    <input type="image" src="img/boton-comprar-ahora-sistema-pos.png" border="0" class="carrito" name="submit" alt="PayPal, la forma más segura y rápida de pagar en línea.">
+                    <img alt="" border="0" src="https://www.paypalobjects.com/es_XC/i/scr/pixel.gif" width="1" height="1">
+                </form> 
+            </div>
+        </main>
+        <footer class="footer">
+            <p>Copyright © 2021 TestOnesta</p>
+        </footer>
+    </div>
 </body>
 </html>
